@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  /* background:#fff3e0; */
+  background: linear-gradient(90deg,#fff3e0,  #ffdfb2);
+  color: white;
+  color:hsl(11, 26%, 24%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px hsla(11, 26%, 24%, 0.149);
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: hsl(14, 88%, 40%); /* deep orange logo color */
+  letter-spacing: 1px;
+  
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: hsl(11, 26%, 24%);
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+  color: hsl(21, 100%, 45%); /* bright orange hover */
+  transform: scale(1.05);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: hsl(11, 26%, 24%);
+  transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+     background-color: hsl(46, 100%, 94%);
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Animate hamburger into X */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+

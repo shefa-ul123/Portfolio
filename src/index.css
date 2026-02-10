@@ -1,0 +1,23 @@
+:root {
+  --toastify-color-success: #27ae60;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-info: #f4a261;
+}
+
+.Toastify__toast {
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(90deg, #f4a261, #ffb347);
+}
