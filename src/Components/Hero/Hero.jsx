@@ -1,6 +1,6 @@
 import React from "react";
 import "./hero.css";
-import profilePic from "../../assets/profile Pic.jpeg";
+import profilePic from "../../assets/profilePic.jpeg";
 import CV from "../../assets/CV_Shefa UL.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi"; 
