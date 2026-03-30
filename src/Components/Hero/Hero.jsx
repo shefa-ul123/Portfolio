@@ -1,6 +1,6 @@
 import React from "react";
 import "./hero.css";
-import profilePic from "../../assets/profile Pic.jpeg";
+import ProfilePic from "../../assets/ProfilePic.jpeg";
 import CV from "../../assets/CV_Shefa UL.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi"; 
@@ -42,7 +42,7 @@ function Hero() {
         </div>
 
         <div className="hero-image">
-          <img src={profilePic} alt="Shefa Profile" />
+          <img src={ProfilePic} alt="Shefa Profile" />
         </div>
       </div>
     </section>

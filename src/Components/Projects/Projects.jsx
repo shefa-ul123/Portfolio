@@ -48,7 +48,7 @@ const projectsData = [
     tech: ["React", "CSS", "Firebase"],
     image: InstaClone,
     liveDemo: "#",
-    github: "#",
+    github: "https://github.com/shefa-ul123/Instagram_Clone",
   },
   
 ];
